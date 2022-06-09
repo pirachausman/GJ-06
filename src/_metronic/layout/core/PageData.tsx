@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {FC, createContext, useContext, useEffect, useState} from 'react'
+import React, {FC, createContext, useContext, useEffect, useState, ReactNode} from 'react'
 
 export interface PageLink {
   title: string
@@ -9,8 +9,8 @@ export interface PageLink {
 }
 
 export interface PageDataContextModel {
-  pageTitle?: string
-  setPageTitle: (_title: string) => void
+  pageTitle?: string | ReactNode
+  setPageTitle: (_title: string | ReactNode) => void
   pageDescription?: string
   setPageDescription: (_description: string) => void
   pageBreadcrumbs?: Array<PageLink>
@@ -18,13 +18,13 @@ export interface PageDataContextModel {
 }
 
 const PageDataContext = createContext<PageDataContextModel>({
-  setPageTitle: (_title: string) => {},
+  setPageTitle: (_title: string | ReactNode) => {},
   setPageBreadcrumbs: (_breadcrumbs: Array<PageLink>) => {},
   setPageDescription: (_description: string) => {},
 })
 
 const PageDataProvider: React.FC = ({children}) => {
-  const [pageTitle, setPageTitle] = useState<string>('')
+  const [pageTitle, setPageTitle] = useState<string | ReactNode>('')
   const [pageDescription, setPageDescription] = useState<string>('')
   const [pageBreadcrumbs, setPageBreadcrumbs] = useState<Array<PageLink>>([])
   const value: PageDataContextModel = {
@@ -50,8 +50,10 @@ type Props = {
 const PageTitle: FC<Props> = ({children, description, breadcrumbs}) => {
   const {setPageTitle, setPageDescription, setPageBreadcrumbs} = usePageData()
   useEffect(() => {
-    if (children) {
+    if (typeof children === 'string') {
       setPageTitle(children.toString())
+    } else {
+      setPageTitle(children)
     }
     return () => {
       setPageTitle('')

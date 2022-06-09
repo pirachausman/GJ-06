@@ -103,6 +103,7 @@ export interface IMain {
   primaryColor: string
   darkSkinEnabled: boolean
   type: 'blank' | 'default' | 'none'
+  mainBodyColor?: string
 }
 
 export interface ILayout {

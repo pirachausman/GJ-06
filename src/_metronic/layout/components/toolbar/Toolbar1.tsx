@@ -44,12 +44,12 @@ const Toolbar1: FC = () => {
 
           <a
             href='#'
-            className='btn btn-bg-white btn-active-color-primary'
+            className='btn btn-bg-success btn-color-white'
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_create_app'
             id='kt_toolbar_primary_button'
           >
-            Create
+            Explore
           </a>
           {/* end::Button */}
         </div>

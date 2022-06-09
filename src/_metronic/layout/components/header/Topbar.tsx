@@ -17,8 +17,8 @@ const Topbar: FC = () => {
           <Search />
         </div>
         {/* Activities */}
-        <div className={clsx('d-flex align-items-center ', toolbarButtonMarginClass)}>
-          {/* begin::Drawer toggle */}
+        {/* <div className={clsx('d-flex align-items-center ', toolbarButtonMarginClass)}>
+          {/* begin::Drawer toggle }
           <div
             className={clsx(
               'btn btn-icon btn-active-light-primary btn-custom',
@@ -31,12 +31,12 @@ const Topbar: FC = () => {
               className={toolbarButtonIconSizeClass}
             />
           </div>
-          {/* end::Drawer toggle */}
-        </div>
+          {/* end::Drawer toggle }
+        </div> */}
 
         {/* NOTIFICATIONS */}
-        <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          {/* begin::Menu- wrapper */}
+        {/* <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
+          {/* begin::Menu- wrapper }
           <div
             className={clsx(
               'btn btn-icon btn-active-light-primary btn-custom',
@@ -53,12 +53,12 @@ const Topbar: FC = () => {
             />
           </div>
           <HeaderNotificationsMenu />
-          {/* end::Menu wrapper */}
-        </div>
+          {/* end::Menu wrapper }
+        </div> */}
 
         {/* CHAT */}
-        <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          {/* begin::Menu wrapper */}
+        {/* <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
+          {/* begin::Menu wrapper }
           <div
             className={clsx(
               'btn btn-icon btn-active-light-primary btn-custom position-relative',
@@ -73,12 +73,12 @@ const Topbar: FC = () => {
 
             <span className='bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink'></span>
           </div>
-          {/* end::Menu wrapper */}
-        </div>
+          {/* end::Menu wrapper }
+        </div> */}
 
         {/* Quick links */}
-        <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          {/* begin::Menu wrapper */}
+        {/* <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
+          {/* begin::Menu wrapper }
           <div
             className={clsx(
               'btn btn-icon btn-active-light-primary btn-custom',
@@ -95,8 +95,8 @@ const Topbar: FC = () => {
             />
           </div>
           <QuickLinks />
-          {/* end::Menu wrapper */}
-        </div>
+          {/* end::Menu wrapper }
+        </div> */}
 
         {/* begin::User */}
         <div
