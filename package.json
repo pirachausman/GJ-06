@@ -61,13 +61,16 @@
     "@types/object-path": "0.11.0",
     "@types/prismjs": "1.16.5",
     "@types/qs": "6.9.7",
-    "@types/react": "^17.0.0",
+    "@types/react": "^17.0.2",
     "@types/react-copy-to-clipboard": "5.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-table": "^7.7.9",
     "react-query-devtools": "2.6.3",
     "v": "^0.3.0",
     "webpack-cli": "^4.8.0"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
