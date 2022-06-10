@@ -11,7 +11,7 @@ const DashboardPage: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8'>
-      <div className='col-xxl-4'>
+      <div className='col-4'>
         <ListsWidget4
           className='card-xl-stretch mb-5 mb-xl-8'
           items={3}
@@ -19,22 +19,22 @@ const DashboardPage: FC = () => (
           chartHeight='200px'
         />
       </div>
-      <div className='d-flex flex-column col-xxl-8'>
+      <div className='d-flex flex-column col-8'>
         <div className='d-flex flex-row' style={{height: '33%'}}>
           <MixedWidget12
-            className='card-xxl-stretch mb-xl-8 col-xxl-4 me-5'
+            className='card-xxl-stretch mb-xl-8 col-4 me-5'
             title='Datasets'
             description=''
             bgimage='/media/stock/600x400/img-4.jpg'
           />
           <MixedWidget13
-            className='card-xxl-stretch mb-xl-8 col-xxl-8 bg-dark'
+            className='card-xxl-stretch mb-xl-8 col-8 bg-dark'
             title='Trivedi Center for Political Data '
             description=''
           />
         </div>
         <div className='d-flex flex-row ' style={{height: '67%'}}>
-          <div className='col-xxl-6 me-5'>
+          <div className='col-6 me-5'>
             <MixedWidget14
               className='card-xxl-stretch-50 mb-xl-8'
               title='Browse <br/>Documentation'
@@ -48,7 +48,7 @@ const DashboardPage: FC = () => (
               bgimage='/media/misc/pattern-2.png'
             />
           </div>
-          <div className='col-xxl-6'>
+          <div className='col-6'>
             <EngageWidget5 className='mb-xl-8 bg-black text-white card-xxl-stretch p-5'>
               <span className='text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae
