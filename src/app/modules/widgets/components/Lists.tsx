@@ -30,7 +30,11 @@ const Lists: FC = () => {
       {/* begin::Row */}
       <div className='row g-5 g-xl-8'>
         <div className='col-xl-4'>
-          <ListsWidget4 className='card-xl-stretch mb-xl-8' />
+          <ListsWidget4
+            className='card-xl-stretch mb-xl-8'
+            chartColor='primary'
+            chartHeight='150px'
+          />
         </div>
         <div className='col-xl-4'>
           <ListsWidget5 className='card-xl-stretch mb-xl-8' />

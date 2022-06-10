@@ -51,12 +51,12 @@ export function HeaderWrapper() {
           <Link to='/'>
             <img
               alt='Logo'
-              src={toAbsoluteUrl('/media/logos/logo.png')}
+              src={toAbsoluteUrl('/media/logos/logo_small.png')}
               className='logo-default h-35px'
             />
             <img
               alt='Logo'
-              src={toAbsoluteUrl('/media/logos/logo.png')}
+              src={toAbsoluteUrl('/media/logos/logo_small.png')}
               className='logo-sticky h-25px'
             />
           </Link>

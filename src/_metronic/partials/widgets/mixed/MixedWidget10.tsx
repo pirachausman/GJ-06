@@ -59,11 +59,11 @@ const MixedWidget10: React.FC<Props> = ({className, chartColor, chartHeight}) =>
   )
 }
 
-const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
+export const chartOptions = (chartColor: string, chartHeight: string): ApexOptions => {
   const labelColor = getCSSVariableValue('--bs-gray-800')
   const strokeColor = getCSSVariableValue('--bs-gray-300')
   const baseColor = getCSSVariableValue('--bs-' + chartColor)
-  const lightColor = getCSSVariableValue('--bs-light-' + chartColor)
+  const lightColor = getCSSVariableValue('--bs-active-' + chartColor)
 
   return {
     series: [

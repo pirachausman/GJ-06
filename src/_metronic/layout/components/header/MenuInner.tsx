@@ -6,7 +6,8 @@ export function MenuInner() {
   const intl = useIntl()
   return (
     <>
-      <MenuItem title={intl.formatMessage({id: 'MENU.2022'})} to='/dashboard' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.HOME'})} to='/dashboard' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.2022'})} to='/apps/chat' />
       <MenuItem title={intl.formatMessage({id: 'MENU.DATAVISUALIZATION'})} to='/builder' />
       <MenuItem title={intl.formatMessage({id: 'MENU.BROWSEDATA'})} to='/crafted' />
       <MenuItem title={intl.formatMessage({id: 'MENU.POLITICALCAREER'})} to='/apps' />
