@@ -11,7 +11,7 @@ const DashboardPage: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8'>
-      <div className='col-4'>
+      <div className='col-lg-4'>
         <ListsWidget4
           className='card-xl-stretch mb-5 mb-xl-8'
           items={3}
@@ -19,37 +19,37 @@ const DashboardPage: FC = () => (
           chartHeight='200px'
         />
       </div>
-      <div className='d-flex flex-column col-8'>
-        <div className='d-flex flex-row' style={{height: '33%'}}>
+      <div className='d-flex flex-column col-lg-8'>
+        <div className='d-flex flex-row flex-xs-column' style={{height: '33%'}}>
           <MixedWidget12
-            className='card-xxl-stretch mb-xl-8 col-4 me-5'
+            className='card-stretch mb-8 col-4 col-xs-12 me-5'
             title='Datasets'
             description=''
             bgimage='/media/stock/600x400/img-4.jpg'
           />
           <MixedWidget13
-            className='card-xxl-stretch mb-xl-8 col-8 bg-dark'
+            className='card-stretch mb-8 col-8 col-xs-12 bg-dark'
             title='Trivedi Center for Political Data '
             description=''
           />
         </div>
-        <div className='d-flex flex-row ' style={{height: '67%'}}>
-          <div className='col-6 me-5'>
+        <div className='d-flex flex-row flex-xs-column' style={{height: '67%'}}>
+          <div className='col-6 col-xs-12 me-5'>
             <MixedWidget14
-              className='card-xxl-stretch-50 mb-xl-8'
+              className='card-stretch-50 mb-8'
               title='Browse <br/>Documentation'
               description=''
               bgimage='/media/stock/600x400/img-33.jpg'
             />
             <MixedWidget12
-              className='card-xxl-stretch-50 mb-xl-8'
+              className='card-stretch-50 mb-8'
               title=''
               description=''
               bgimage='/media/misc/pattern-2.png'
             />
           </div>
-          <div className='col-6'>
-            <EngageWidget5 className='mb-xl-8 bg-black text-white card-xxl-stretch p-5'>
+          <div className='col-6 col-xs-12'>
+            <EngageWidget5 className='bg-black text-white card-stretch p-5'>
               <span className='text-white'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae
                 quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis
