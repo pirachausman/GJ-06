@@ -91,6 +91,10 @@
     margin-right: 0.5rem;
   }
 
+  &.btn-radius {
+    border-radius: 20px;
+  }
+
   // Icon only button
   &.btn-icon {
     display: inline-flex;

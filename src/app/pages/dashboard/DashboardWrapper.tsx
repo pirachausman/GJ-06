@@ -2,8 +2,6 @@
 import React, {FC} from 'react'
 import {toAbsoluteUrl} from '../../../_metronic/helpers'
 import {PageTitle} from '../../../_metronic/layout/core'
-import {ListsWidget4, EngageWidget5} from '../../../_metronic/partials/widgets'
-import {MixedWidget12} from '../../../_metronic/partials/widgets/mixed/MixedWidget12'
 import {MixedWidget13} from '../../../_metronic/partials/widgets/mixed/MixedWidget13'
 import {MixedWidget14} from '../../../_metronic/partials/widgets/mixed/MixedWidget14'
 
@@ -11,58 +9,47 @@ const DashboardPage: FC = () => (
   <>
     {/* begin::Row */}
     <div className='row gy-5 g-xl-8'>
-      <div className='col-lg-4'>
-        <ListsWidget4
-          className='card-xl-stretch mb-5 mb-xl-8'
-          items={3}
-          chartColor='success'
-          chartHeight='200px'
+      <div className='col-lg-6 d-flex flex-column'>
+        <MixedWidget14
+          className='card-lg-stretch mb-8 h-sm-500px h-xs-500px h-md-400px'
+          title='2022 AE: An Overview'
+          description=''
+          bgimage='/media/misc/3.png'
+        />
+        <MixedWidget14
+          className='card-lg-stretch mb-8 h-sm-500px h-xs-500px h-md-400px'
+          title='Political Career Tracker'
+          description=''
+          bgimage='/media/misc/4.png'
         />
       </div>
-      <div className='d-flex flex-column col-lg-8'>
-        <div className='d-flex flex-row flex-xs-column' style={{height: '33%'}}>
-          <MixedWidget12
-            className='card-stretch mb-8 col-4 col-xs-12 me-5'
-            title='Datasets'
-            description=''
-            bgimage='/media/stock/600x400/img-4.jpg'
-          />
-          <MixedWidget13
-            className='card-stretch mb-8 col-8 col-xs-12 bg-dark'
-            title='Trivedi Center for Political Data '
-            description=''
-          />
-        </div>
-        <div className='d-flex flex-row flex-xs-column' style={{height: '67%'}}>
-          <div className='col-6 col-xs-12 me-5'>
-            <MixedWidget14
-              className='card-stretch-50 mb-8'
-              title='Browse <br/>Documentation'
-              description=''
-              bgimage='/media/stock/600x400/img-33.jpg'
-            />
-            <MixedWidget12
-              className='card-stretch-50 mb-8'
-              title=''
-              description=''
-              bgimage='/media/misc/pattern-2.png'
-            />
-          </div>
-          <div className='col-6 col-xs-12'>
-            <EngageWidget5 className='bg-black text-white card-stretch p-5'>
-              <span className='text-white'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae
-                quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis
-                harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
-                Provident similique accusantium nemo autem. Veritatis obcaecati tenetr iure eius
-                earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia
-                aut! Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis
-                quas aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga?
-              </span>
-            </EngageWidget5>
-          </div>
-        </div>
-
+      <div className='d-flex flex-column col-lg-6'>
+        <MixedWidget13
+          className='mb-8 bg-danger'
+          title='Trivedi Center for Political Data'
+          description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+          optio, eaque rerum!'
+        />
+        <MixedWidget14
+          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          title='Data Visualisation'
+          description=''
+          bgimage='/media/misc/5.png'
+        />
+        <MixedWidget14
+          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          title='Browse Documentation'
+          description=''
+          bgimage='/media/misc/2.png'
+        />
+        <MixedWidget14
+          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          title='Browse/Download Data'
+          description=''
+          bgimage='/media/misc/1.png'
+        />
         {/* <div className='d-flex flex-row'>
           <div className='col-xxl-4 me-5'></div>
           <div className='col-xxl-8'>

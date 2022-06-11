@@ -8,14 +8,7 @@ import {ScrollTop} from './components/ScrollTop'
 import {Content} from './components/Content'
 import {PageDataProvider, useLayout} from './core'
 import {useLocation} from 'react-router-dom'
-import {
-  DrawerMessenger,
-  RightToolbar,
-  ActivityDrawer,
-  Main,
-  InviteUsers,
-  UpgradePlan,
-} from '../partials'
+import {DrawerMessenger, ActivityDrawer, Main, InviteUsers, UpgradePlan} from '../partials'
 import {MenuComponent} from '../../_metronic/assets/ts/components'
 import clsx from 'clsx'
 
@@ -62,7 +55,7 @@ const MasterLayout: React.FC = ({children}) => {
 
       {/* begin:: Drawers */}
       <ActivityDrawer />
-      <RightToolbar />
+      {/* <RightToolbar /> */}
       <DrawerMessenger />
       {/* end:: Drawers */}
 
