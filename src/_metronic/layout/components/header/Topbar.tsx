@@ -34,9 +34,9 @@ const Topbar: FC = () => {
           {/* end::Drawer toggle }
         </div> */}
 
-        {/* NOTIFICATIONS */}
+        {/* NOTIFICATIONS }
         <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          {/* begin::Menu- wrapper */}
+          {/* begin::Menu- wrapper/}
           <div
             className={clsx(
               'btn btn-icon btn-active-light-primary btn-custom',
@@ -53,8 +53,8 @@ const Topbar: FC = () => {
             />
           </div>
           <HeaderNotificationsMenu />
-          {/* end::Menu wrapper */}
-        </div>
+          {/* end::Menu wrapper }
+        </div> */}
 
         {/* CHAT */}
         {/* <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
