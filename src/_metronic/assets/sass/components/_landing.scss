@@ -102,6 +102,13 @@ body[data-kt-sticky-landing-header='on'] {
 
 // Tablet & mobile modes
 @include media-breakpoint-down(lg) {
+
+  .h-box {
+    min-height: 300px;
+  }
+  .h-box-small {
+    min-height: 200px;
+  }
   // Landing header
   .landing-header {
     height: $landing-header-height-tablet-and-mobile;

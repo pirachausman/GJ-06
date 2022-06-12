@@ -10,7 +10,7 @@ const DefaultTitle: FC = () => {
     <div {...attributes.pageTitle} className='page-title d-flex flex-column'>
       {/* begin::Title */}
       {pageTitle && (
-        <h1 className='d-flex text-white fw-bolder my-1 fs-5x'>
+        <h1 className='d-flex text-white fw-bolder my-1 fs-2x'>
           {pageTitle}
           {pageDescription && config.pageTitle && config.pageTitle.description && (
             <>

@@ -7,9 +7,10 @@ type Props = {
   title: string
   description: string
   bgimage: string
+  link: string
 }
 
-const MixedWidget14: React.FC<Props> = ({className, title, description, bgimage}) => {
+const MixedWidget14: React.FC<Props> = ({className, title, description, bgimage, link}) => {
   return (
     <div
       className={`card ${className}`}
@@ -31,7 +32,7 @@ const MixedWidget14: React.FC<Props> = ({className, title, description, bgimage}
           ></a>
 
           <a
-            href='#'
+            href={link}
             className='btn btn-radius btn-bg-danger w-150px btn-color-white mt-5'
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_create_app'
