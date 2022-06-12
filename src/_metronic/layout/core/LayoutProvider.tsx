@@ -43,6 +43,24 @@ const disableSplashScreen = () => {
   }
 }
 
+const startSplashAnimation = () => {
+  const splashScreenDotSpan = document.querySelectorAll('#splash-screen span span')
+  if (splashScreenDotSpan) {
+    for (var i = 0; i < splashScreenDotSpan.length; i++) {
+      if (splashScreenDotSpan[i].classList.contains('fs-3x')) {
+        splashScreenDotSpan[i].classList.remove('fs-3x')
+        splashScreenDotSpan[i].classList.add('fs-4x')
+      } else if (splashScreenDotSpan[i].classList.contains('fs-4x')) {
+        splashScreenDotSpan[i].classList.remove('fs-4x')
+        splashScreenDotSpan[i].classList.add('fs-5x')
+      } else if (splashScreenDotSpan[i].classList.contains('fs-5x')) {
+        splashScreenDotSpan[i].classList.remove('fs-5x')
+        splashScreenDotSpan[i].classList.add('fs-3x')
+      }
+    }
+  }
+}
+
 const LayoutProvider: React.FC = ({children}) => {
   const [config, setConfig] = useState(LayoutSetup.config)
   const [classes, setClasses] = useState(LayoutSetup.classes)
@@ -59,7 +77,7 @@ const LayoutProvider: React.FC = ({children}) => {
     setCSSVariables(LayoutSetup.cssVariables)
     setTimeout(() => {
       disableSplashScreen()
-    }, 500)
+    }, 2500)
   }
   const value: LayoutContextModel = {
     config,
@@ -70,7 +88,11 @@ const LayoutProvider: React.FC = ({children}) => {
   }
 
   useEffect(() => {
-    disableSplashScreen()
+    const splashInterval = setInterval(() => startSplashAnimation(), 200)
+    setTimeout(() => {
+      clearInterval(splashInterval)
+      disableSplashScreen()
+    }, 1500)
   }, [])
 
   return <LayoutContext.Provider value={value}>{children}</LayoutContext.Provider>
