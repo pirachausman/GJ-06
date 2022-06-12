@@ -20,9 +20,9 @@ const PAGELINKS = [
 
 const DataVisualization = () => {
   return (
-    <div className='row gy-5 card pb-7 pe-lg-3 d-flex flex-lg-row'>
+    <div className='row gy-5 card pb-7 pe-lg-3 d-flex flex-lg-row bg-background'>
       <div className='col-lg-4'>
-        <div className='card d-flex d-column p-5 card-stretch h-100'>
+        <div className='card d-flex d-column p-5 card-stretch h-100 bg-foreground'>
           <div className='d-flex flex-row'>
             <button className='btn btn-danger flex-grow-1'>Lok Sabha</button>
             <button className='btn flex-grow-1'>Vidhan Sabha</button>
@@ -79,8 +79,8 @@ const DataVisualization = () => {
         </div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>
-        <div className='card'>
-          <ChartsWidget9 className={''} />
+        <div className='card '>
+          <ChartsWidget9 className={'bg-foreground'} />
         </div>
       </div>
     </div>
