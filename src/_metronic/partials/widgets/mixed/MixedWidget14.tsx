@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {toAbsoluteUrl} from '../../../helpers'
 
 type Props = {
@@ -31,15 +32,15 @@ const MixedWidget14: React.FC<Props> = ({className, title, description, bgimage,
             style={{maxWidth: '60%'}}
           ></a>
 
-          <a
-            href={link}
+          <Link
+            to={link}
             className='btn btn-radius btn-bg-danger w-150px btn-color-white mt-5'
             data-bs-toggle='modal'
             data-bs-target='#kt_modal_create_app'
             id='kt_toolbar_primary_button'
           >
             Explore
-          </a>
+          </Link>
         </div>
       </div>
       {/* end::Body */}
