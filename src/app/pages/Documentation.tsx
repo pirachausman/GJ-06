@@ -4,7 +4,7 @@ import {PageTitle} from '../../_metronic/layout/core'
 
 const Documentation = () => {
   return (
-    <div className='row gy-5 g-xl-8 bg-white card py-5 px-5'>
+    <div className='row gy-5 g-xl-8 card py-5 px-5'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel
       sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam
       eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
