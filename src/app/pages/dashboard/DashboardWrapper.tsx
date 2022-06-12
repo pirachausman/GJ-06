@@ -11,16 +11,18 @@ const DashboardPage: FC = () => (
     <div className='row gy-5 g-xl-8'>
       <div className='col-lg-6 d-flex flex-column'>
         <MixedWidget14
-          className='card-lg-stretch mb-8 h-sm-500px h-xs-500px h-md-400px'
+          className='card-lg-stretch mb-8 h-box h-md-400px'
           title='2022 AE: An Overview'
           description=''
           bgimage='/media/misc/3.png'
+          link='/dashboard'
         />
         <MixedWidget14
-          className='card-lg-stretch mb-8 h-sm-500px h-xs-500px h-md-400px'
+          className='card-lg-stretch mb-8 h-box h-md-400px'
           title='Political Career Tracker'
           description=''
           bgimage='/media/misc/4.png'
+          link='/dashboard'
         />
       </div>
       <div className='d-flex flex-column col-lg-6'>
@@ -33,22 +35,25 @@ const DashboardPage: FC = () => (
           optio, eaque rerum!'
         />
         <MixedWidget14
-          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          className='card-lg-stretch mb-8 h-box-small'
           title='Data Visualisation'
           description=''
           bgimage='/media/misc/5.png'
+          link='/data-visualization'
         />
         <MixedWidget14
-          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          className='card-lg-stretch mb-8 h-box-small'
           title='Browse Documentation'
           description=''
           bgimage='/media/misc/2.png'
+          link='/documentation'
         />
         <MixedWidget14
-          className='card-lg-stretch mb-8 h-sm-300px h-xs-300px'
+          className='card-lg-stretch mb-8 h-box-small'
           title='Browse/Download Data'
           description=''
           bgimage='/media/misc/1.png'
+          link='/documentation'
         />
         {/* <div className='d-flex flex-row'>
           <div className='col-xxl-4 me-5'></div>
@@ -124,9 +129,6 @@ const DashboardWrapper: FC = () => {
           src={toAbsoluteUrl('/media/logos/logo_large.png')}
           className='logo-default'
         />
-        {/* <span className='text-white fw-ultragbold'>{intl.formatMessage({id: 'MENU.LOK'})}</span> */}
-        {/* &nbsp; //{' '} */}
-        {/* <span className='text-danger fw-ultragbold'>{intl.formatMessage({id: 'MENU.DHABA'})}</span> */}
       </PageTitle>
       <DashboardPage />
     </>

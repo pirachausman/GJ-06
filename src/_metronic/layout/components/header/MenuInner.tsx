@@ -8,10 +8,13 @@ export function MenuInner() {
     <>
       <MenuItem title={intl.formatMessage({id: 'MENU.HOME'})} to='/dashboard' />
       <MenuItem title={intl.formatMessage({id: 'MENU.2022'})} to='/apps/chat' />
-      <MenuItem title={intl.formatMessage({id: 'MENU.DATAVISUALIZATION'})} to='/builder' />
+      <MenuItem
+        title={intl.formatMessage({id: 'MENU.DATAVISUALIZATION'})}
+        to='/data-visualization'
+      />
       <MenuItem title={intl.formatMessage({id: 'MENU.BROWSEDATA'})} to='/crafted' />
       <MenuItem title={intl.formatMessage({id: 'MENU.POLITICALCAREER'})} to='/apps' />
-      <MenuItem title={intl.formatMessage({id: 'MENU.DOCUMENTATION'})} to='/mega-menu' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.DOCUMENTATION'})} to='/documentation' />
       {/* <MenuItem title='Layout Builder' to='/builder' /> */}
       {/* <MenuInnerWithSub
         title='Crafted'
