@@ -201,7 +201,7 @@ function getChartOptions(height: number): ApexOptions {
     colors: [
       baseColor,
       function ({value, seriesIndex, dataPointIndex, w}: any) {
-        console.log(value, seriesIndex, dataPointIndex, w)
+        // console.log(value, seriesIndex, dataPointIndex, w)
         if (value > 700) {
           return 'rgba(89, 158, 190, 1)'
         } else if (value > 600) {
