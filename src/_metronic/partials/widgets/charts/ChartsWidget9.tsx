@@ -186,6 +186,7 @@ function getChartOptions(height: number): ApexOptions {
       },
     },
     tooltip: {
+      theme: 'dark',
       style: {
         fontSize: '12px',
       },
