@@ -1,6 +1,7 @@
 import React from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
+import {ChartsWidget9} from '../../_metronic/partials/widgets/charts/ChartsWidget9'
 
 const PAGELINKS = [
   {
@@ -21,14 +22,65 @@ const DataVisualization = () => {
   return (
     <div className='row gy-5 g-xl-8 bg-black card pb-7 px-4 d-flex flex-row'>
       <div className='col-4 pe-5'>
-        <div className='card bg-dark d-flex d-column p-5'>
+        <div className='card bg-dark d-flex d-column p-5 card-stretch h-100'>
           <div className='d-flex flex-row'>
             <button className='btn btn-danger flex-grow-1'>Lok Sabha</button>
             <button className='btn btn-dark flex-grow-1'>Vidhan Sabha</button>
           </div>
+          <div className='d-flex flex-row pt-15 border-bottom border-gray-800 pb-6'>
+            <div style={{flexBasis: '100%'}} className='flex-grow-1 align-items-end d-flex'>
+              <label className='form-label text-gray-500 fs-4'>State</label>
+            </div>
+
+            <select
+              className='form-select form-select-solid flex-grow-1 border-0'
+              data-control='select2'
+              data-placeholder='select'
+            >
+              <option value='1'>select</option>
+              <option value='2'>Option 1</option>
+              <option value='3'>Option 2</option>
+            </select>
+          </div>
+          <div className='d-flex flex-row pt-4 border-bottom border-gray-800 pb-6'>
+            <div style={{flexBasis: '100%'}} className='flex-grow-1 align-items-end d-flex'>
+              <label className='form-label text-gray-500 fs-4'>Variable</label>
+            </div>
+
+            <select
+              className='form-select form-select-solid flex-grow-1 border-0'
+              data-control='select2'
+              data-placeholder='select'
+            >
+              <option value='1'>select</option>
+              <option value='2'>Option 1</option>
+              <option value='3'>Option 2</option>
+            </select>
+          </div>
+          <div className='d-flex flex-row pt-4 border-bottom border-gray-800 pb-6'>
+            <div style={{flexBasis: '100%'}} className='flex-grow-1 align-items-end d-flex'>
+              <label className='form-label text-gray-500 fs-4'>Visualization</label>
+            </div>
+
+            <select
+              className='form-select form-select-solid flex-grow-1 border-0'
+              data-control='select2'
+              data-placeholder='select'
+            >
+              <option value='1'>select</option>
+              <option value='2'>Option 1</option>
+              <option value='3'>Option 2</option>
+            </select>
+          </div>
+          <div className='form-check form-check-custom form-check-solid pt-4'>
+            <input className='form-check-input' type='checkbox' value='' id='flexCheckDefault' />
+            <label className='form-check-label text-gray-500 fs-6'>Show AC Segments</label>
+          </div>
         </div>
       </div>
-      <div className='card col-8 bg-dark'>hi</div>
+      <div className='card col-8 bg-dark'>
+        <ChartsWidget9 className={'bg-dark'} />
+      </div>
     </div>
   )
 }
