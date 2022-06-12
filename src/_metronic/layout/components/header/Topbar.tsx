@@ -1,12 +1,11 @@
 import clsx from 'clsx'
 import React, {FC} from 'react'
-import {KTSVG} from '../../../helpers'
-import {HeaderNotificationsMenu, Search} from '../../../partials'
+import {Search} from '../../../partials'
 
-const toolbarButtonMarginClass = 'ms-1 ms-lg-3',
-  toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
-  //toolbarUserAvatarHeightClass = 'symbol-30px symbol-md-40px',
-  toolbarButtonIconSizeClass = 'svg-icon-1'
+const toolbarButtonMarginClass = 'ms-1 ms-lg-3'
+//  toolbarButtonHeightClass = 'w-30px h-30px w-md-40px h-md-40px',
+//toolbarUserAvatarHeightClass = 'symbol-30px symbol-md-40px',
+//toolbarButtonIconSizeClass = 'svg-icon-1'
 
 const Topbar: FC = () => {
   return (
