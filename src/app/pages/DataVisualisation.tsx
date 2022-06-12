@@ -23,12 +23,8 @@ const DataVisualization = () => {
       <div className='col-4 pe-5'>
         <div className='card bg-dark d-flex d-column p-5'>
           <div className='d-flex flex-row'>
-            <a href='#' className='btn btn-danger flex-grow-1'>
-              Lok Sabha
-            </a>
-            <a href='#' className='btn btn-dark flex-grow-1'>
-              Vidhan Sabha
-            </a>
+            <button className='btn btn-danger flex-grow-1'>Lok Sabha</button>
+            <button className='btn btn-dark flex-grow-1'>Vidhan Sabha</button>
           </div>
         </div>
       </div>
