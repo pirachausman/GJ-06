@@ -15,7 +15,7 @@ const Search: FC = () => {
       const number = Math.floor(Math.random() * 6) + 1
 
       // Hide recently viewed
-      suggestionsElement.current!.classList.add('d-none')
+      suggestionsElement.current?.classList.add('d-none')
 
       if (number === 3) {
         // Hide results
@@ -36,7 +36,7 @@ const Search: FC = () => {
 
   const clear = (search: SearchComponent) => {
     // Show recently viewed
-    suggestionsElement.current!.classList.remove('d-none')
+    suggestionsElement.current?.classList.remove('d-none')
     // Hide results
     resultsElement.current!.classList.add('d-none')
     // Hide empty message
@@ -90,7 +90,7 @@ const Search: FC = () => {
           >
             <form
               data-kt-search-element='form'
-              className='w-100 position-relative mb-3'
+              className='w-100 position-relative mb-0'
               autoComplete='off'
             >
               <KTSVG
@@ -100,7 +100,7 @@ const Search: FC = () => {
 
               <input
                 type='text'
-                className='form-control form-control-flush ps-10'
+                className='form-control form-control-flush ps-10 text-white'
                 name='search'
                 placeholder='Search...'
                 data-kt-search-element='input'
@@ -127,7 +127,7 @@ const Search: FC = () => {
                 className='position-absolute top-50 end-0 translate-middle-y'
                 data-kt-search-element='toolbar'
               >
-                <div
+                {/* <div
                   data-kt-search-element='preferences-show'
                   className='btn btn-icon w-20px btn-sm btn-active-color-primary me-1'
                   data-bs-toggle='tooltip'
@@ -137,7 +137,7 @@ const Search: FC = () => {
                   title='Show search preferences'
                 >
                   <KTSVG path='/media/icons/duotune/coding/cod001.svg' className='svg-icon-1' />
-                </div>
+                </div> */}
 
                 <div
                   data-kt-search-element='advanced-options-form-show'
@@ -168,7 +168,7 @@ const Search: FC = () => {
                   </div>
 
                   <div className='d-flex flex-column justify-content-start fw-bold'>
-                    <span className='fs-6 fw-bold'>Karina Clark</span>
+                    <span className='fs-6 fw-bold text-white'>Karina Clark</span>
                     <span className='fs-7 fw-bold text-muted'>Marketing Manager</span>
                   </div>
                 </a>
@@ -182,7 +182,7 @@ const Search: FC = () => {
                   </div>
 
                   <div className='d-flex flex-column justify-content-start fw-bold'>
-                    <span className='fs-6 fw-bold'>Olivia Bold</span>
+                    <span className='fs-6 fw-bold text-white'>Olivia Bold</span>
                     <span className='fs-7 fw-bold text-muted'>Software Engineer</span>
                   </div>
                 </a>
@@ -196,7 +196,7 @@ const Search: FC = () => {
                   </div>
 
                   <div className='d-flex flex-column justify-content-start fw-bold'>
-                    <span className='fs-6 fw-bold'>Ana Clark</span>
+                    <span className='fs-6 fw-bold text-white'>Ana Clark</span>
                     <span className='fs-7 fw-bold text-muted'>UI/UX Designer</span>
                   </div>
                 </a>
@@ -210,7 +210,7 @@ const Search: FC = () => {
                   </div>
 
                   <div className='d-flex flex-column justify-content-start fw-bold'>
-                    <span className='fs-6 fw-bold'>Nick Pitola</span>
+                    <span className='fs-6 fw-bold text-white'>Nick Pitola</span>
                     <span className='fs-7 fw-bold text-muted'>Art Director</span>
                   </div>
                 </a>
@@ -224,7 +224,7 @@ const Search: FC = () => {
                   </div>
 
                   <div className='d-flex flex-column justify-content-start fw-bold'>
-                    <span className='fs-6 fw-bold'>Edward Kulnic</span>
+                    <span className='fs-6 fw-bold text-white'>Edward Kulnic</span>
                     <span className='fs-7 fw-bold text-muted'>System Administrator</span>
                   </div>
                 </a>
@@ -421,7 +421,7 @@ const Search: FC = () => {
               </div>
             </div>
 
-            <div ref={suggestionsElement} className='mb-4' data-kt-search-element='main'>
+            {/* <div ref={suggestionsElement} className='mb-4' data-kt-search-element='main'>
               <div className='d-flex flex-stack fw-bold mb-4'>
                 <span className='text-muted fs-6 me-2'>Recently Searched:</span>
               </div>
@@ -553,7 +553,7 @@ const Search: FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div ref={emptyElement} data-kt-search-element='empty' className='text-center d-none'>
               <div className='pt-10 pb-10'>
@@ -576,14 +576,14 @@ const Search: FC = () => {
             <div className='mb-5'>
               <input
                 type='text'
-                className='form-control form-control-sm form-control-solid'
+                className='form-control form-control-sm form-control-solid bg-dark'
                 placeholder='Contains the word'
                 name='query'
               />
             </div>
 
-            <div className='mb-5'>
-              <div className='nav-group nav-group-fluid'>
+            <div className='mb-5 '>
+              <div className='nav-group nav-group-fluid bg-dark'>
                 <label>
                   <input
                     type='radio'
@@ -592,28 +592,28 @@ const Search: FC = () => {
                     value='has'
                     defaultChecked
                   />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger'>
                     All
                   </span>
                 </label>
 
                 <label>
                   <input type='radio' className='btn-check' name='type' value='users' />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary px-4'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger px-4'>
                     Users
                   </span>
                 </label>
 
                 <label>
                   <input type='radio' className='btn-check' name='type' value='orders' />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary px-4'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger px-4'>
                     Orders
                   </span>
                 </label>
 
                 <label>
                   <input type='radio' className='btn-check' name='type' value='projects' />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary px-4'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger px-4'>
                     Projects
                   </span>
                 </label>
@@ -624,7 +624,7 @@ const Search: FC = () => {
               <input
                 type='text'
                 name='assignedto'
-                className='form-control form-control-sm form-control-solid'
+                className='form-control form-control-sm form-control-solid bg-dark'
                 placeholder='Assigned to'
               />
             </div>
@@ -633,13 +633,13 @@ const Search: FC = () => {
               <input
                 type='text'
                 name='collaborators'
-                className='form-control form-control-sm form-control-solid'
+                className='form-control form-control-sm form-control-solid bg-dark'
                 placeholder='Collaborators'
               />
             </div>
 
             <div className='mb-5'>
-              <div className='nav-group nav-group-fluid'>
+              <div className='nav-group nav-group-fluid bg-dark'>
                 <label>
                   <input
                     type='radio'
@@ -648,14 +648,14 @@ const Search: FC = () => {
                     value='has'
                     defaultChecked
                   />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger'>
                     Has attachment
                   </span>
                 </label>
 
                 <label>
                   <input type='radio' className='btn-check' name='attachment' value='any' />
-                  <span className='btn btn-sm btn-color-muted btn-active btn-active-primary px-4'>
+                  <span className='btn btn-sm btn-color-muted btn-active btn-active-danger px-4'>
                     Any
                   </span>
                 </label>
@@ -668,7 +668,7 @@ const Search: FC = () => {
                 aria-label='Select a Timezone'
                 data-control='select2'
                 data-placeholder='date_period'
-                className='form-select form-select-sm form-select-solid'
+                className='form-select form-select-sm form-select-solid bg-dark'
               >
                 <option value='next'>Within the next</option>
                 <option value='last'>Within the last</option>
@@ -682,7 +682,7 @@ const Search: FC = () => {
                 <input
                   type='number'
                   name='date_number'
-                  className='form-control form-control-sm form-control-solid'
+                  className='form-control form-control-sm form-control-solid bg-dark'
                   placeholder='Lenght'
                 />
               </div>
@@ -693,7 +693,7 @@ const Search: FC = () => {
                   aria-label='Select a Timezone'
                   data-control='select2'
                   data-placeholder='Period'
-                  className='form-select form-select-sm form-select-solid'
+                  className='form-select form-select-sm form-select-solid bg-dark'
                 >
                   <option value='days'>Days</option>
                   <option value='weeks'>Weeks</option>
@@ -709,15 +709,15 @@ const Search: FC = () => {
                   e.preventDefault()
                   setMenuState('main')
                 }}
-                className='btn btn-sm btn-light fw-bolder btn-active-light-primary me-2'
+                className='btn btn-sm btn-light fw-bolder btn-active-dark me-2 bg-dark'
               >
                 Cancel
               </button>
 
               <a
                 href='/#'
-                className='btn btn-sm fw-bolder btn-primary'
-                data-kt-search-element='advanced-options-form-search'
+                className='btn btn-sm fw-bolder btn-danger'
+                data-kt-search-element='advanced-options-form-search bg-danger'
               >
                 Search
               </a>
@@ -777,11 +777,11 @@ const Search: FC = () => {
                   e.preventDefault()
                   setMenuState('main')
                 }}
-                className='btn btn-sm btn-light fw-bolder btn-active-light-primary me-2'
+                className='btn btn-sm btn-light fw-bolder btn-active-dark me-2'
               >
                 Cancel
               </button>
-              <button className='btn btn-sm fw-bolder btn-primary'>Save Changes</button>
+              <button className='btn btn-sm fw-bolder btn-danger'>Save Changes</button>
             </div>
           </form>
         </div>
