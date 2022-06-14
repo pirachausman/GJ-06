@@ -32,13 +32,7 @@ const MixedWidget14: React.FC<Props> = ({className, title, description, bgimage,
             style={{maxWidth: '60%'}}
           ></a>
 
-          <Link
-            to={link}
-            className='btn btn-radius btn-bg-danger w-150px btn-color-white mt-5'
-            data-bs-toggle='modal'
-            data-bs-target='#kt_modal_create_app'
-            id='kt_toolbar_primary_button'
-          >
+          <Link to={link} className='btn btn-radius btn-bg-danger w-150px btn-color-white mt-5'>
             Explore
           </Link>
         </div>
