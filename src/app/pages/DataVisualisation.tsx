@@ -20,7 +20,7 @@ const PAGELINKS = [
 ]
 
 const DataVisualization = () => {
-  const [formData, setFormData] = useState({})
+  const [, setFormData] = useState({})
   const renderChart = () => {
     setFormData({key: 123})
   }
