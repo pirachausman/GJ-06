@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {toAbsoluteUrl} from '../../../helpers'
 // import { KTSVG } from "../../../helpers";
 
 type Props = {
@@ -23,12 +22,6 @@ const EngageWidget5: React.FC<Props> = ({className, innerPadding = '', children}
         {/* end::Text */}
         {children}
         {/* begin::Image */}
-        <div
-          className='flex-grow-1 bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom card-rounded-bottom h-200px'
-          style={{
-            backgroundImage: `url('${toAbsoluteUrl('/media/illustrations/terms-2.png')}')`,
-          }}
-        ></div>
 
         {/* end::Image */}
       </div>
