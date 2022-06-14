@@ -1,5 +1,7 @@
 import clsx from 'clsx'
 import React, {FC} from 'react'
+// import {Link} from 'react-router-dom'
+// import {useAuth} from '../../../../app/modules/auth'
 import {Search} from '../../../partials'
 
 const toolbarButtonMarginClass = 'ms-1 ms-lg-3'
@@ -8,6 +10,8 @@ const toolbarButtonMarginClass = 'ms-1 ms-lg-3'
 //toolbarButtonIconSizeClass = 'svg-icon-1'
 
 const Topbar: FC = () => {
+  //const {logout} = useAuth()
+
   return (
     <div className='d-flex align-items-stretch flex-shrink-0'>
       <div className='topbar d-flex align-items-stretch flex-shrink-0'>
@@ -15,6 +19,14 @@ const Topbar: FC = () => {
         <div className={clsx('d-flex align-items-stretch', toolbarButtonMarginClass)}>
           <Search />
         </div>
+
+        {/* <div className={clsx('d-flex align-items-stretch', toolbarButtonMarginClass)}>
+          <div className='menu-item px-5'>
+            <a onClick={logout} className='menu-link px-5'>
+              Sign Out
+            </a>
+          </div>
+        </div> */}
         {/* Activities */}
         {/* <div className={clsx('d-flex align-items-center ', toolbarButtonMarginClass)}>
           {/* begin::Drawer toggle }
