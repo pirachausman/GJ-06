@@ -2,6 +2,7 @@
 import React, {FC} from 'react'
 import {toAbsoluteUrl} from '../../../_metronic/helpers'
 import {PageTitle} from '../../../_metronic/layout/core'
+import {EngageWidget5} from '../../../_metronic/partials/widgets'
 import {MixedWidget13} from '../../../_metronic/partials/widgets/mixed/MixedWidget13'
 import {MixedWidget14} from '../../../_metronic/partials/widgets/mixed/MixedWidget14'
 
@@ -17,6 +18,17 @@ const DashboardPage: FC = () => (
           bgimage='/media/misc/3.png'
           link='/dashboard'
         />
+        <EngageWidget5 className='mb-8 p-10 bg-redgradient'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas
+          vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum
+          quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi
+          repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed
+          odit fugiat iusto fuga praesentium optio, eaque rerum! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
+          consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat
+          iusto fuga praesentium optio, eaque rerum!
+        </EngageWidget5>
         <MixedWidget14
           className='card-lg-stretch mb-8 h-box h-md-400px'
           title='Political Career Tracker'
@@ -27,7 +39,7 @@ const DashboardPage: FC = () => (
       </div>
       <div className='d-flex flex-column col-lg-6'>
         <MixedWidget13
-          className='mb-8 bg-danger'
+          className='mb-8 bg-danger py-lg-0 py-10'
           title='Trivedi Center for Political Data'
           description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
