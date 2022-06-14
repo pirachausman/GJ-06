@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useMemo, useState} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
 import {ChartsWidget9} from '../../_metronic/partials/widgets/charts/ChartsWidget9'
@@ -20,11 +20,17 @@ const PAGELINKS = [
 ]
 
 const DataVisualization = () => {
+  const [formData, setFormData] = useState({})
+  const renderChart = () => {
+    setFormData({key: 123})
+  }
+
+  const ElectionForm_ = useMemo(() => <ElectionForm onFormChange={renderChart} />, [])
   return (
     <div className='row gy-5 card pb-7 pe-lg-3 d-flex flex-lg-row bg-transparent'>
       <div className='col-lg-4'>
         <div className='card d-flex d-column p-5 card-stretch h-100 bg-foreground'>
-          <ElectionForm />
+          {ElectionForm_}
         </div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>

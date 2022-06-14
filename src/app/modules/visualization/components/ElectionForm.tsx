@@ -9,7 +9,11 @@ import {ElectionTypes} from '../VisualizationTypes'
 import DropDown from './DropDown'
 import ElectionTypeSelector from './ElectionTypeSelector'
 
-export default function ElectionForm() {
+type Props = {
+  onFormChange: () => void
+}
+
+export default function ElectionForm({onFormChange}: Props) {
   const electionChangeHandler = async (e: any) => {
     setElectionType(e.target.value)
     setSelectedState('')
@@ -27,6 +31,7 @@ export default function ElectionForm() {
   const visualizationChangeHandler = async (e: any) => {
     setVisualizationOption(e.target.value)
     visualizationType.current = fetchVisualizationType(e.target.value)
+    onFormChange()
   }
 
   const [states, setStates] = useState<any[]>([])
