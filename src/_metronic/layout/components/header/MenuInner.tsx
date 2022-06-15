@@ -12,7 +12,7 @@ export function MenuInner() {
         title={intl.formatMessage({id: 'MENU.DATAVISUALIZATION'})}
         to='/data-visualization'
       />
-      <MenuItem title={intl.formatMessage({id: 'MENU.BROWSEDATA'})} to='#' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.BROWSEDATA'})} to='/browse' />
       <MenuItem title={intl.formatMessage({id: 'MENU.POLITICALCAREER'})} to='#' />
       <MenuItem title={intl.formatMessage({id: 'MENU.DOCUMENTATION'})} to='/documentation' />
       {/* <MenuItem title='Layout Builder' to='/builder' /> */}

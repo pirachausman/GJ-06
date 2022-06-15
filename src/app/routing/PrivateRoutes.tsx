@@ -7,6 +7,7 @@ import {DataVisualizationWrapper} from '../pages/DataVisualisation'
 import {MenuTestPage} from '../pages/MenuTestPage'
 import {getCSSVariableValue} from '../../_metronic/assets/ts/_utils'
 import {DocumentationWrapper} from '../pages/Documentation'
+import {BrowseDownloadDataWrapper} from '../pages/BrowseDownloadData'
 
 const PrivateRoutes = () => {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
@@ -26,6 +27,7 @@ const PrivateRoutes = () => {
         <Route path='dashboard' element={<DashboardWrapper />} />
         <Route path='builder' element={<BuilderPageWrapper />} />
         <Route path='menu-test' element={<MenuTestPage />} />
+        <Route path='browse' element={<BrowseDownloadDataWrapper />} />
         <Route path='data-visualization' element={<DataVisualizationWrapper />} />
         <Route path='documentation' element={<DocumentationWrapper />} />
         {/* Lazy Modules */}
