@@ -29,9 +29,7 @@ const BrowseDownloadData = () => {
   return (
     <div className='row gy-5 card pb-7 pe-lg-3 d-flex flex-lg-row bg-transparent'>
       <div className='col-lg-4'>
-        <div className='card d-flex d-column p-5 card-stretch h-100 bg-foreground'>
-          {ElectionForm_}
-        </div>
+        <div className='card d-flex d-column p-5 bg-foreground'>{ElectionForm_}</div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>
         <BrowseTable className='mb-5 mb-xl-8 bg-foreground px-5' />

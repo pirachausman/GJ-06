@@ -230,7 +230,7 @@ const Table: React.FC<TableProps> = ({data, columns, pagination, setPagination})
       </table>
       <div className='h-2' />
       <div className='row'>
-        <div className='col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'>
+        <div className='col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start my-10 my-lg-0'>
           <div className='dataTables_length' id='kt_datatable_example_7_length'>
             <label>
               <select
@@ -283,7 +283,7 @@ const Table: React.FC<TableProps> = ({data, columns, pagination, setPagination})
                 </button>
               </li>
               <li
-                className={`paginate_button page-item previous ${
+                className={`paginate_button page-item previous me-2 ${
                   !instance.getCanPreviousPage() ? 'disabled' : ''
                 }`}
                 id='kt_datatable_example_7_previous'
@@ -323,7 +323,7 @@ const Table: React.FC<TableProps> = ({data, columns, pagination, setPagination})
                 )
               })}
               <li
-                className={`paginate_button page-item next ${
+                className={`paginate_button page-item next ms-2 ${
                   !instance.getCanNextPage() ? 'disabled' : ''
                 }`}
                 id='kt_datatable_example_7_next'
