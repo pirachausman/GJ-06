@@ -1,16 +1,17 @@
 import {useEffect, useRef, useState} from 'react'
 import {visualizationVarOptions} from '../VisualizationData'
 import {
+  fetchChartMapOptions,
   fetchStates,
   fetchVisualizationOptions,
   fetchVisualizationType,
 } from '../VisualizationDataRequests'
-import {ElectionTypes} from '../VisualizationTypes'
+import {ElectionTypes, VisualizationForm} from '../VisualizationTypes'
 import DropDown from './DropDown'
 import ElectionTypeSelector from './ElectionTypeSelector'
 
 type Props = {
-  onFormChange: () => void
+  onFormChange: (formData: VisualizationForm) => void
 }
 
 export default function ElectionForm({onFormChange}: Props) {
@@ -31,7 +32,19 @@ export default function ElectionForm({onFormChange}: Props) {
   const visualizationChangeHandler = async (e: any) => {
     setVisualizationOption(e.target.value)
     visualizationType.current = fetchVisualizationType(e.target.value)
-    onFormChange()
+    var form: VisualizationForm = {
+      electionType,
+      visualization: visualizationOption,
+      visualizationType: visualizationType.current,
+      stateName: selectedState,
+      assemblyNumber: '',
+      party: '',
+      legends: new Set(),
+      segmentwise: false,
+    }
+    let data = await fetchChartMapOptions(form)
+    console.log(data)
+    onFormChange(form)
   }
 
   const [states, setStates] = useState<any[]>([])
