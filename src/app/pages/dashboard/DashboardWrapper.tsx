@@ -65,7 +65,7 @@ const DashboardPage: FC = () => (
           title='Browse/Download Data'
           description=''
           bgimage='/media/misc/1.png'
-          link='/documentation'
+          link='/browse'
         />
         {/* <div className='d-flex flex-row'>
           <div className='col-xxl-4 me-5'></div>
