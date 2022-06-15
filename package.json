@@ -8,6 +8,7 @@
     "@formatjs/intl-relativetimeformat": "^9.1.7",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "~2.10.1",
+    "@tanstack/react-table": "^8.0.0-beta.8",
     "animate.css": "^4.1.1",
     "apexcharts": "^3.27.1",
     "axios": "^0.21.1",
