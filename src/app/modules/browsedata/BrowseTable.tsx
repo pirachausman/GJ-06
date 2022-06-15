@@ -1,10 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
 import {
   createTable,
-  Column,
-  TableInstance,
   PaginationState,
   useTableInstance,
   getCoreRowModel,
@@ -13,6 +10,7 @@ import {
   ColumnDef,
   OnChangeFn,
 } from '@tanstack/react-table'
+
 import {makeData, Person} from './data'
 import {KTSVG} from '../../../_metronic/helpers'
 
@@ -55,8 +53,7 @@ export const BrowseTable: React.FC<Props> = ({className}) => {
     []
   )
 
-  const [data, setData] = React.useState(() => makeData(100000))
-  const refreshData = () => setData(() => makeData(100000))
+  const [data] = React.useState(() => makeData(100000))
 
   const [pagination, setPagination] = React.useState<PaginationState>({
     pageIndex: 0,
@@ -101,30 +98,30 @@ export const BrowseTable: React.FC<Props> = ({className}) => {
           >
             {/*begin::Menu item*/}
             <div className='menu-item px-3'>
-              <a href='#' className='menu-link px-3' data-kt-export='copy'>
+              <button className='menu-link px-3' data-kt-export='copy'>
                 Copy to clipboard
-              </a>
+              </button>
             </div>
             {/*end::Menu item*/}
             {/*begin::Menu item*/}
             <div className='menu-item px-3'>
-              <a href='#' className='menu-link px-3' data-kt-export='excel'>
+              <button className='menu-link px-3' data-kt-export='excel'>
                 Export as Excel
-              </a>
+              </button>
             </div>
             {/*end::Menu item*/}
             {/*begin::Menu item*/}
             <div className='menu-item px-3'>
-              <a href='#' className='menu-link px-3' data-kt-export='csv'>
+              <button className='menu-link px-3' data-kt-export='csv'>
                 Export as CSV
-              </a>
+              </button>
             </div>
             {/*end::Menu item*/}
             {/*begin::Menu item*/}
             <div className='menu-item px-3'>
-              <a href='#' className='menu-link px-3' data-kt-export='pdf'>
+              <button className='menu-link px-3' data-kt-export='pdf'>
                 Export as PDF
-              </a>
+              </button>
             </div>
             {/*end::Menu item*/}
           </div>
@@ -373,39 +370,39 @@ const Table: React.FC<TableProps> = ({data, columns, pagination, setPagination})
   )
 }
 
-function Filter({column, instance}: {column: Column<any>; instance: TableInstance<any>}) {
-  const firstValue = instance.getPreFilteredRowModel().flatRows[0]?.getValue(column.id)
+// function Filter({column, instance}: {column: Column<any>; instance: TableInstance<any>}) {
+//   const firstValue = instance.getPreFilteredRowModel().flatRows[0]?.getValue(column.id)
 
-  const columnFilterValue = column.getFilterValue()
+//   const columnFilterValue = column.getFilterValue()
 
-  return typeof firstValue === 'number' ? (
-    <div className='flex space-x-2'>
-      <input
-        type='number'
-        value={(columnFilterValue as [number, number])?.[0] ?? ''}
-        onChange={(e) =>
-          column.setFilterValue((old: [number, number]) => [e.target.value, old?.[1]])
-        }
-        placeholder={`Min`}
-        className='w-24 border shadow rounded'
-      />
-      <input
-        type='number'
-        value={(columnFilterValue as [number, number])?.[1] ?? ''}
-        onChange={(e) =>
-          column.setFilterValue((old: [number, number]) => [old?.[0], e.target.value])
-        }
-        placeholder={`Max`}
-        className='w-24 border shadow rounded'
-      />
-    </div>
-  ) : (
-    <input
-      type='text'
-      value={(columnFilterValue ?? '') as string}
-      onChange={(e) => column.setFilterValue(e.target.value)}
-      placeholder={`Search...`}
-      className='w-36 border shadow rounded'
-    />
-  )
-}
+//   return typeof firstValue === 'number' ? (
+//     <div className='flex space-x-2'>
+//       <input
+//         type='number'
+//         value={(columnFilterValue as [number, number])?.[0] ?? ''}
+//         onChange={(e) =>
+//           column.setFilterValue((old: [number, number]) => [e.target.value, old?.[1]])
+//         }
+//         placeholder={`Min`}
+//         className='w-24 border shadow rounded'
+//       />
+//       <input
+//         type='number'
+//         value={(columnFilterValue as [number, number])?.[1] ?? ''}
+//         onChange={(e) =>
+//           column.setFilterValue((old: [number, number]) => [old?.[0], e.target.value])
+//         }
+//         placeholder={`Max`}
+//         className='w-24 border shadow rounded'
+//       />
+//     </div>
+//   ) : (
+//     <input
+//       type='text'
+//       value={(columnFilterValue ?? '') as string}
+//       onChange={(e) => column.setFilterValue(e.target.value)}
+//       placeholder={`Search...`}
+//       className='w-36 border shadow rounded'
+//     />
+//   )
+// }

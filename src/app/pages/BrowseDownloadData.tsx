@@ -1,14 +1,8 @@
 import React, {useMemo, useState} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
-import {TablesWidget9} from '../../_metronic/partials/widgets'
-import {ChartsWidget9} from '../../_metronic/partials/widgets/charts/ChartsWidget9'
-import {ListsWidget9} from '../../_metronic/partials/widgets/lists/ListsWidget9'
 import BrowseForm from '../modules/browsedata/BrowseForm'
 import {BrowseTable} from '../modules/browsedata/BrowseTable'
-import ElectionForm from '../modules/visualization/components/ElectionForm'
-import {Lists} from '../modules/widgets/components/Lists'
-import {Tables} from '../modules/widgets/components/Tables'
 
 const PAGELINKS = [
   {

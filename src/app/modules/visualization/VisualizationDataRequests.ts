@@ -3,7 +3,6 @@ import { ElectionTypes, VisualizationForm } from "./VisualizationTypes";
 import ChartsMapsCodes from './data/ChartsMapsCodes.json';
 import VidhanSabhaNumber from './data/VidhanSabhaNumber.json'
 import LokSabhaNumber from './data/LokSabhaNumber.json'
-import { AssemblyType } from "../browsedata/BrowseTypes";
 import { ListType } from "../../../_metronic/partials/widgets/lists/ListsWidget9";
 
 export async function fetchStates(type: ElectionTypes): Promise<any[]> {

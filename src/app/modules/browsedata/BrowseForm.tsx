@@ -1,18 +1,10 @@
-import {useEffect, useRef, useState} from 'react'
-import {visualizationVarOptions} from '../visualization/VisualizationData'
-import {
-  fetchAssemblies,
-  fetchChartMapOptions,
-  fetchStates,
-  fetchVisualizationOptions,
-  fetchVisualizationType,
-} from '../visualization/VisualizationDataRequests'
-import {ElectionTypes, VisualizationForm} from '../visualization/VisualizationTypes'
+import {useEffect, useState} from 'react'
+import {fetchAssemblies, fetchStates} from '../visualization/VisualizationDataRequests'
+import {ElectionTypes} from '../visualization/VisualizationTypes'
 import DropDown from '../visualization/components/DropDown'
 import ElectionTypeSelector from '../visualization/components/ElectionTypeSelector'
 import {ListsWidget9, ListType} from '../../../_metronic/partials/widgets/lists/ListsWidget9'
-import {AssemblyType, BrowseFormType} from './BrowseTypes'
-import {sleep} from 'react-query/types/core/utils'
+import {BrowseFormType} from './BrowseTypes'
 
 type Props = {
   onFormChange: (formData: BrowseFormType) => void

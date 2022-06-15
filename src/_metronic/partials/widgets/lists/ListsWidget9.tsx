@@ -1,8 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {AssemblyType} from '../../../../app/modules/browsedata/BrowseTypes'
-import {KTSVG} from '../../../helpers'
-import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
 export interface ListType {
   title: string
