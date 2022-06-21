@@ -62,7 +62,7 @@ export const fetchVisualizationData = async (formData: VisualizationForm) => {
     const url = BASE_URL + "/data/api/v1.0/getVizLegend";
       let response = await fetch(url, {
           method: "POST",
-          mode: "no-cors",          
+          mode: "cors",          
           headers: new Headers({
               "content-type": "application/json"
           }),

@@ -8,6 +8,7 @@ import {MenuTestPage} from '../pages/MenuTestPage'
 import {getCSSVariableValue} from '../../_metronic/assets/ts/_utils'
 import {DocumentationWrapper} from '../pages/Documentation'
 import {BrowseDownloadDataWrapper} from '../pages/BrowseDownloadData'
+import {OveriewWrapper} from '../pages/2022Overview'
 
 const PrivateRoutes = () => {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
@@ -25,7 +26,7 @@ const PrivateRoutes = () => {
         <Route path='auth/*' element={<Navigate to='/dashboard' />} />
         {/* Pages */}
         <Route path='dashboard' element={<DashboardWrapper />} />
-        <Route path='builder' element={<BuilderPageWrapper />} />
+        <Route path='overview' element={<OveriewWrapper />} />
         <Route path='menu-test' element={<MenuTestPage />} />
         <Route path='browse' element={<BrowseDownloadDataWrapper />} />
         <Route path='data-visualization' element={<DataVisualizationWrapper />} />

@@ -35,7 +35,7 @@ const unique_AE_States = Array.from(new Set(VidhanSabhaNumber.sort(compareValues
 export const AE_States = unique_AE_States.map(function (item) { return { value: item, label: item.replace(/_/g, " ") } });
 export const visualizationVarOptions = [{ value: "", label: "Select Level" }].concat(removeDuplicatesFromArray(ChartsMapsCodes.map(function(x){return{value:x.varType,label:x.varLabel}})));
 
-export const BASE_URL = 'https://lokdhaba.ashoka.edu.in/api'
+export const BASE_URL = 'http://lokdhaba.ashoka.edu.in:15000/api'
 
 export const CHECKED = (visualization: string) => ChartsMapsCodes.filter(function (item) { return item.modulename === visualization })[0].alloptionschecked;
 
