@@ -16,7 +16,7 @@ const DashboardPage: FC = () => (
           title='2022 AE: An Overview'
           description=''
           bgimage='/media/misc/3.png'
-          link='/dashboard'
+          link='/overview'
         />
         <EngageWidget5 className='mb-8 p-10 bg-redgradient'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas

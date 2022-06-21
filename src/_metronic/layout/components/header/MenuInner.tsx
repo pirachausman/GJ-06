@@ -7,7 +7,7 @@ export function MenuInner() {
   return (
     <>
       <MenuItem title={intl.formatMessage({id: 'MENU.HOME'})} to='/dashboard' />
-      <MenuItem title={intl.formatMessage({id: 'MENU.2022'})} to='#' />
+      <MenuItem title={intl.formatMessage({id: 'MENU.2022'})} to='/overview' />
       <MenuItem
         title={intl.formatMessage({id: 'MENU.DATAVISUALIZATION'})}
         to='/data-visualization'
