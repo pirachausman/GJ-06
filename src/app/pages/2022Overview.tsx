@@ -1,9 +1,6 @@
 import React, {useMemo, useState} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
-import {SidebarGeneral, SidebarUser, UserMenu} from '../../_metronic/partials'
-import {Demos} from '../../_metronic/partials/layout/demos-drawer/Demos'
-import BrowseForm from '../modules/browsedata/BrowseForm'
 import {BrowseTable} from '../modules/browsedata/BrowseTable'
 import {OverviewHeader} from '../modules/overview/OverviewHeader'
 

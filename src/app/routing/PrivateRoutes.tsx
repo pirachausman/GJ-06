@@ -11,7 +11,7 @@ import {BrowseDownloadDataWrapper} from '../pages/BrowseDownloadData'
 import {OveriewWrapper} from '../pages/2022Overview'
 
 const PrivateRoutes = () => {
-  const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
+  //const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
   const WizardsPage = lazy(() => import('../modules/wizards/WizardsPage'))
   const AccountPage = lazy(() => import('../modules/accounts/AccountPage'))

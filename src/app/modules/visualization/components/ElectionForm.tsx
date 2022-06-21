@@ -43,6 +43,7 @@ export default function ElectionForm({onFormChange}: Props) {
       segmentwise: false,
     }
     let data = await fetchChartMapOptions(form)
+    console.log(data)
     onFormChange(form)
   }
 
