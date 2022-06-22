@@ -1,9 +1,10 @@
 import React, {useMemo, useState} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
-import {BrowseTable} from '../modules/browsedata/BrowseTable'
+import {BarChart} from '../modules/overview/BarChart/BarChart'
 import {OverviewHeader} from '../modules/overview/OverviewHeader'
-
+import {data} from '../modules/overview/data'
+import {SimpleTable} from '../modules/overview/Tables/SImpleTable'
 const PAGELINKS = [
   {
     title: 'Home',
@@ -20,8 +21,9 @@ const PAGELINKS = [
 ]
 
 const Overview = () => {
-  const [, setSelected] = useState(0)
+  const [selected, setSelected] = useState(0)
   const select = (id: number) => {
+    console.log(id)
     setSelected(id)
   }
 
@@ -32,7 +34,22 @@ const Overview = () => {
         <div className='card d-flex d-column p-5 bg-foreground'>{ElectionForm_}</div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>
-        <BrowseTable className='mb-5 mb-xl-8 bg-foreground px-5' />
+        {data[selected].graphs?.map((graph) => (
+          <BarChart
+            className='mb-5 mb-xl-8 bg-foreground px-5'
+            title={graph.title}
+            options={graph || {}}
+            key={graph.title}
+          />
+        ))}
+        {data[selected].tables?.map((table) => (
+          <SimpleTable
+            className='mb-5 mb-xl-8 bg-foreground px-5'
+            head={table.titles || []}
+            data={table.data || []}
+            key={table.id}
+          />
+        ))}
       </div>
     </div>
   )
