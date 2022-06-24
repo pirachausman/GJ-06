@@ -7,7 +7,7 @@ import {BrowseTable} from '../modules/browsedata/BrowseTable'
 const PAGELINKS = [
   {
     title: 'Home',
-    path: '/dashboard',
+    path: '/home',
     isSeparator: false,
     isActive: false,
   },

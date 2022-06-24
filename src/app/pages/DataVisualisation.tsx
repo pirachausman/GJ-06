@@ -7,7 +7,7 @@ import ElectionForm from '../modules/visualization/components/ElectionForm'
 const PAGELINKS = [
   {
     title: 'Home',
-    path: '/dashboard',
+    path: '/home',
     isSeparator: false,
     isActive: false,
   },

@@ -13,7 +13,7 @@ const PrivateRoutes = () => {
     <Routes>
       <Route element={<MasterLayout />}>
         {/* Pages */}
-        <Route path='dashboard' element={<DashboardWrapper />} />
+        <Route path='home' element={<DashboardWrapper />} />
         <Route path='overview' element={<OveriewWrapper />} />
         <Route path='browse' element={<BrowseDownloadDataWrapper />} />
         <Route path='about' element={<AboutWrapper />} />

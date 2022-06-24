@@ -34,7 +34,7 @@ const DashboardPage: FC = () => (
           title='Political Career Tracker'
           description=''
           bgimage='/media/misc/4.png'
-          link='/dashboard'
+          link='/home'
         />
       </div>
       <div className='d-flex flex-column col-lg-6'>

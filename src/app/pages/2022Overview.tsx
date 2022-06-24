@@ -8,7 +8,7 @@ import {SimpleTable} from '../modules/overview/Tables/SImpleTable'
 const PAGELINKS = [
   {
     title: 'Home',
-    path: '/dashboard',
+    path: '/home',
     isSeparator: false,
     isActive: false,
   },
