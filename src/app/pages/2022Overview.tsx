@@ -31,7 +31,15 @@ const Overview = () => {
   return (
     <div className='row gy-5 card pb-7 pe-lg-3 d-flex flex-lg-row bg-transparent'>
       <div className='col-lg-4'>
-        <div className='card d-flex d-column p-5 bg-foreground'>{ElectionForm_}</div>
+        <div className='card d-flex d-column p-5 bg-foreground'>
+          <img
+            id='india'
+            alt=''
+            src='https://github.com/srishti-gupta-me/Election_Dashboard/blob/main/map.png?raw=true'
+            style={{maxWidth: '100%'}}
+          />
+          {ElectionForm_}
+        </div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>
         {data[selected].graphs?.map((graph) => (

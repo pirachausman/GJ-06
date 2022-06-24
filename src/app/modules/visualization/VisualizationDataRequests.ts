@@ -66,6 +66,7 @@ export const fetchVisualizationData = async (formData: VisualizationForm) => {
           headers: new Headers({
               "content-type": "application/json"
           }),
+         
           body: JSON.stringify({
               ElectionType: electionType,
               StateName: stateName,
