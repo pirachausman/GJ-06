@@ -1,37 +1,48 @@
 [
   {
-    "id": "Average age of contestants",
-    "titles": [
-      "State",
-      "2017: Age",
-      "2022: Age"
-    ],
-    "data": [
+    "id": "Turncoats",
+    "titles": ["State", "2012: Total_Turncoat", "2012: Total_Contestants", "2017: Total_Turncoat", "2017: Total_Contestants", "Link to historical data"],
+    "data":[      
       [
-        "Goa",
-        "47.99",
-        "48.33"
+          "Goa",
+          "23",
+          "251",
+          "23",
+          "215",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Goa&amp;var=Candidate&amp;viz=turncoatsStrike\">Link for Goa</a>"
       ],
       [
-        "Manipur",
-        "51.55",
-        "52.41"
+          "Manipur",
+          "70",
+          "266",
+          "46",
+          "279",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Manipur&amp;var=Candidate&amp;viz=turncoatsStrike\">Link for Manipur</a>"
       ],
       [
-        "Punjab",
-        "48.45",
-        "48.82 "
+          "Punjab",
+          "23",
+          "1145",
+          "10",
+          "1078",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Punjab&amp;var=Candidate&amp;viz=turncoatsStrike\">Link for Punjab</a>"
       ],
       [
-        "Uttar Pradesh",
-        "44.91",
-        "45.83"
+          "Uttar Pradesh",
+          "200",
+          "4853",
+          "228",
+          "6838",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttar_Pradesh&amp;var=Candidate&amp;viz=turncoatsStrike\">Link for Uttar_Pradesh</a>"
       ],
       [
-        "Uttarakhand",
-        "47.11",
-        "48.43"
+          "Uttarakhand",
+          "37",
+          "637",
+          "22",
+          "788",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttarakhand&amp;var=Candidate&amp;viz=turncoatsStrike\">Link for Uttarakhand</a>"
       ]
-    ]
+  ]
   }
 ]

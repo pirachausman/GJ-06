@@ -1,37 +1,43 @@
 [
   {
-    "id": "Average age of contestants",
-    "titles": [
-      "State",
-      "2017: Age",
-      "2022: Age"
-    ],
-    "data": [
+    "id": "Voter turnout",
+    "titles": ["Serial Number", "State/Year", "2012", "2017", "Link to historical data"],
+    "data": [      
       [
-        "Goa",
-        "47.99",
-        "48.33"
+          "1",
+          "Goa",
+          "81.73",
+          "82.42",
+          "<a href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Goa&amp;var=Turnout&amp;viz=voterTurnoutChart\" target=\"_blank\">Link for Goa</a>"
       ],
       [
-        "Manipur",
-        "51.55",
-        "52.41"
+          "2",
+          "Manipur",
+          "79.19",
+          "86.59",
+          "<a href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Manipur&amp;var=Turnout&amp;viz=voterTurnoutChart\" target=\"_blank\">Link for Manipur</a>"
       ],
       [
-        "Punjab",
-        "48.45",
-        "48.82 "
+          "3",
+          "Punjab",
+          "77.37",
+          "77.10",
+          "<a href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Punjab&amp;var=Turnout&amp;viz=voterTurnoutChart\" target=\"_blank\">Link for Punjab</a>"
       ],
       [
-        "Uttar Pradesh",
-        "44.91",
-        "45.83"
+          "4",
+          "Uttar Pradesh",
+          "60.03",
+          "61.22",
+          "<a href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttar_Pradesh&amp;var=Turnout&amp;viz=voterTurnoutChart\" target=\"_blank\">Link for Uttar_Pradesh</a>"
       ],
       [
-        "Uttarakhand",
-        "47.11",
-        "48.43"
+          "5",
+          "Uttarakhand",
+          "65.64",
+          "65.41",
+          "<a href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttarakhand&amp;var=Turnout&amp;viz=voterTurnoutChart\" target=\"_blank\">Link for Uttarakhand</a>"
       ]
-    ]
+  ]
   }
 ]

@@ -1,37 +1,28 @@
 [
   {
-    "id": "Average age of contestants",
-    "titles": [
-      "State",
-      "2017: Age",
-      "2022: Age"
-    ],
-    "data": [
+    "id": "First time MLAs",
+    "titles": ["State", "Link to historical data"],
+    "data": [      
       [
-        "Goa",
-        "47.99",
-        "48.33"
+          "Goa",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Goa&amp;var=Candidate&amp;viz=firstTimeWinners\">Link for Goa</a>"
       ],
       [
-        "Manipur",
-        "51.55",
-        "52.41"
+          "Manipur",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Manipur&amp;var=Candidate&amp;viz=firstTimeWinners\">Link for Manipur</a>"
       ],
       [
-        "Punjab",
-        "48.45",
-        "48.82 "
+          "Punjab",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Punjab&amp;var=Candidate&amp;viz=firstTimeWinners\">Link for Punjab</a>"
       ],
       [
-        "Uttar Pradesh",
-        "44.91",
-        "45.83"
+          "Uttar Pradesh",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttar_Pradesh&amp;var=Candidate&amp;viz=firstTimeWinners\">Link for Uttar_Pradesh</a>"
       ],
       [
-        "Uttarakhand",
-        "47.11",
-        "48.43"
+          "Uttarakhand",
+          "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&amp;st=Uttarakhand&amp;var=Candidate&amp;viz=firstTimeWinners\">Link for Uttarakhand</a>"
       ]
-    ]
+  ]
   }
 ]

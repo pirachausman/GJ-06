@@ -1,10 +1,11 @@
 import React, {useMemo, useState} from 'react'
 import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
-import {BarChart} from '../modules/overview/BarChart/BarChart'
+import {BarChart} from '../modules/overview/charts/BarChart'
 import {OverviewHeader} from '../modules/overview/OverviewHeader'
 import {data} from '../modules/overview/data/data'
 import {SimpleTable} from '../modules/overview/Tables/SImpleTable'
+import {PieChart} from '../modules/overview/charts/PieChart'
 const PAGELINKS = [
   {
     title: 'Home',
@@ -48,6 +49,13 @@ const Overview = () => {
                 <div dangerouslySetInnerHTML={{__html: graph.map}}></div>
               </div>
             </div>
+          ) : graph.chart?.type === 'pie' ? (
+            <PieChart
+              className='mb-5 mb-xl-8 bg-foreground px-5'
+              title={graph.title}
+              options={graph || {}}
+              key={graph.title}
+            />
           ) : (
             <BarChart
               className='mb-5 mb-xl-8 bg-foreground px-5'

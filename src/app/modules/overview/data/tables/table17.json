@@ -1,37 +1,84 @@
 [
   {
-    "id": "Average age of contestants",
-    "titles": [
-      "State",
-      "2017: Age",
-      "2022: Age"
-    ],
+    "id": "INC seat share across states",
+    "titles": ["State", "Party", "Seats won", "Total seats", "Seat share percentage"],
     "data": [
       [
-        "Goa",
-        "47.99",
-        "48.33"
+          "Goa",
+          "INC",
+          "17",
+          "40",
+          "42.50"
       ],
       [
-        "Manipur",
-        "51.55",
-        "52.41"
+          "Manipur",
+          "INC",
+          "28",
+          "60",
+          "46.67"
       ],
       [
-        "Punjab",
-        "48.45",
-        "48.82 "
+          "Punjab",
+          "INC",
+          "77",
+          "117",
+          "65.81"
       ],
       [
-        "Uttar Pradesh",
-        "44.91",
-        "45.83"
+          "Uttar Pradesh",
+          "INC",
+          "7",
+          "403",
+          "1.74"
       ],
       [
-        "Uttarakhand",
-        "47.11",
-        "48.43"
+          "Uttarakhand",
+          "INC",
+          "11",
+          "70",
+          "15.71"
       ]
-    ]
+  ]
+  },
+  {
+    "id": "BJP seat share across states",
+    "titles": ["State", "Party", "Seats won", "Total seats", "Seat share percentage"],
+    "data": [
+      [
+          "Goa",
+          "BJP",
+          "13",
+          "40",
+          "32.50"
+      ],
+      [
+          "Manipur",
+          "BJP",
+          "21",
+          "60",
+          "35.00"
+      ],
+      [
+          "Punjab",
+          "BJP",
+          "3",
+          "117",
+          "2.56"
+      ],
+      [
+          "Uttar Pradesh",
+          "BJP",
+          "312",
+          "403",
+          "77.42"
+      ],
+      [
+          "Uttarakhand",
+          "BJP",
+          "57",
+          "70",
+          "81.43"
+      ]
+  ]
   }
 ]
