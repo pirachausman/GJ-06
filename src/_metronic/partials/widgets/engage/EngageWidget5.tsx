@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import {Link} from 'react-router-dom'
 // import { KTSVG } from "../../../helpers";
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 
 const EngageWidget5: React.FC<Props> = ({className, innerPadding = '', children}) => {
   return (
-    <div className={`card ${className}`}>
+    <Link className={`card ${className} text-dark`} to={'/about'}>
       {/* begin::Body */}
 
       {/* begin::Wrapper */}
@@ -28,7 +29,7 @@ const EngageWidget5: React.FC<Props> = ({className, innerPadding = '', children}
       {/* end::Wrapper */}
 
       {/* end::Body */}
-    </div>
+    </Link>
   )
 }
 
