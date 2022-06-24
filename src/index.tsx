@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom'
 import axios from 'axios'
 import {Chart, registerables} from 'chart.js'
 import {QueryClient, QueryClientProvider} from 'react-query'
+import {Provider} from 'react-redux'
+import store from './app/store'
 
 // Apps
 import {MetronicI18nProvider} from './_metronic/i18n/Metronici18n'
@@ -39,11 +41,13 @@ Chart.register(...registerables)
 const queryClient = new QueryClient()
 
 ReactDOM.render(
-  <QueryClientProvider client={queryClient}>
-    <MetronicI18nProvider>
-      <AppRoutes />
-    </MetronicI18nProvider>
-  </QueryClientProvider>,
+  <Provider store={store}>
+    <QueryClientProvider client={queryClient}>
+      <MetronicI18nProvider>
+        <AppRoutes />
+      </MetronicI18nProvider>
+    </QueryClientProvider>
+  </Provider>,
 
   document.getElementById('root')
 )
