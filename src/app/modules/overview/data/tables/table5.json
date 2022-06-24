@@ -1,0 +1,55 @@
+[
+  {
+    "id": "Total number of turncoats",
+    "titles": [
+      "State",
+      "2017: Turncoat_Count",
+      "2017: Total Contestants",
+      "2022: Turncoat Count",
+      "2022: Total Contestants",
+      "Link to historical data"
+    ],
+    "data": [
+      [
+        "Goa",
+        "24",
+        "251",
+        "43",
+        "301",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Goa&var=Candidate&viz=turncoatsStrike\">Link for Goa</a>"
+      ],
+      [
+        "Manipur",
+        "79",
+        "266",
+        "59",
+        "265",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Manipur&var=Candidate&viz=turncoatsStrike\">Link for Manipur</a>"
+      ],
+      [
+        "Punjab",
+        "27",
+        "1145",
+        "30",
+        "1304",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Punjab&var=Candidate&viz=turncoatsStrike\">Link for Punjab</a>"
+      ],
+      [
+        "Uttar Pradesh",
+        "237",
+        "4853",
+        "206",
+        "4442",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttar_Pradesh&var=Candidate&viz=turncoatsStrike\">Link for Uttar_Pradesh</a>"
+      ],
+      [
+        "Uttarakhand",
+        "38",
+        "637",
+        "34",
+        "632",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttarakhand&var=Candidate&viz=turncoatsStrike\">Link for Uttarakhand</a>"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Total number of women contestants",
+    "titles": [
+      "State",
+      "2017: Women Contestants",
+      "2022: Women Contestants"
+    ],
+    "data": [
+      [
+        "Goa",
+        "19",
+        "26"
+      ],
+      [
+        "Manipur",
+        "11",
+        "17"
+      ],
+      [
+        "Punjab",
+        "81",
+        "93"
+      ],
+      [
+        "Uttar_Pradesh",
+        "482",
+        "561"
+      ],
+      [
+        "Uttarakhand",
+        "62",
+        "63"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Parties contested and represented",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "Contested",
+        "data": [18, 18, 52, 303, 35]
+      },
+      {
+        "name": "Represented",
+        "data": [6, 7, 5, 9, 3]
+      }
+    ]
+  }
+]

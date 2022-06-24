@@ -1,0 +1,43 @@
+[
+    {
+      "id": "Total number of contestants",
+      "titles": [
+        "State",
+        "2017: Total Contestants",
+        "2022: Total Contestants",
+        "Link to historical data"
+      ],
+      "data": [
+        [
+          "Goa",
+          "251",
+          "301",
+          "<a target='_blank' href='https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Goa&var=Candidate&viz=contestedDepositSavedChart'>Link for Goa</a>"
+        ],
+        [
+          "Manipur",
+          "266",
+          "265",
+          "<a target='_blank' href='https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Manipur&var=Candidate&viz=contestedDepositSavedChart'>Link for Manipur</a>"
+        ],
+        [
+          "Punjab",
+          "1145",
+          "1304",
+          "<a target='_blank' href='https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Punjab&var=Candidate&viz=contestedDepositSavedChart'>Link for Punjab</a>"
+        ],
+        [
+          "Uttar Pradesh",
+          "4853",
+          "4442",
+          "<a target='_blank' href='https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttar_Pradesh&var=Candidate&viz=contestedDepositSavedChart'>Link for Uttar_Pradesh</a>"
+        ],
+        [
+          "Uttarakhand",
+          "637",
+          "632",
+          "<a target='_blank' href='https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttarakhand&var=Candidate&viz=contestedDepositSavedChart'>Link for Uttarakhand</a>"
+        ]
+      ]
+    }
+  ]

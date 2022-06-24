@@ -3,7 +3,7 @@ import {useIntl} from 'react-intl'
 import {PageTitle} from '../../_metronic/layout/core'
 import {BarChart} from '../modules/overview/BarChart/BarChart'
 import {OverviewHeader} from '../modules/overview/OverviewHeader'
-import {data} from '../modules/overview/data'
+import {data} from '../modules/overview/data/data'
 import {SimpleTable} from '../modules/overview/Tables/SImpleTable'
 const PAGELINKS = [
   {
@@ -23,7 +23,6 @@ const PAGELINKS = [
 const Overview = () => {
   const [selected, setSelected] = useState(0)
   const select = (id: number) => {
-    console.log(id)
     setSelected(id)
   }
 
@@ -42,14 +41,22 @@ const Overview = () => {
         </div>
       </div>
       <div className='col-lg-8 ps-3 px-lg-0'>
-        {data[selected].graphs?.map((graph) => (
-          <BarChart
-            className='mb-5 mb-xl-8 bg-foreground px-5'
-            title={graph.title}
-            options={graph || {}}
-            key={graph.title}
-          />
-        ))}
+        {data[selected].graphs?.map((graph) =>
+          graph.map ? (
+            <div className={`card mb-5 mb-xl-8 bg-foreground px-5 d-flex align-items-center`}>
+              <div className='card-body'>
+                <div dangerouslySetInnerHTML={{__html: graph.map}}></div>
+              </div>
+            </div>
+          ) : (
+            <BarChart
+              className='mb-5 mb-xl-8 bg-foreground px-5'
+              title={graph.title}
+              options={graph || {}}
+              key={graph.title}
+            />
+          )
+        )}
         {data[selected].tables?.map((table) => (
           <SimpleTable
             className='mb-5 mb-xl-8 bg-foreground px-5'

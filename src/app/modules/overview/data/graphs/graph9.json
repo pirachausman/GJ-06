@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Percentage of first-time contestants in the state",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [60.56, 49.25, 79.21, 85.53, 73.47]
+      }      
+    ]
+  },
+  {
+    "title": "Percentage contribution of major parties in first-time contestants in the state",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [52.63, 38.93, 21.94, 17.71, 22.22]
+      }      
+    ]
+  },
+  {
+    "title": "Percentage of first-time MLAs in the state",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [20.0, 20.0, 49.57, 59.06, 28.57]
+      }      
+    ]
+  },
+  {
+    "title": "Percentage contributon of major parties in first-time MLAs in the state",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [75.0, 100.0, 100.0, 94.51, 100.0]
+      }      
+    ]
+  }
+]

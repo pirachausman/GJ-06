@@ -23,6 +23,9 @@ const BarChart: React.FC<Props> = ({className, title, options}) => {
     chartOptions.series = options.series
     chartOptions.xaxis!.categories = options.xaxis?.categories
     chartOptions.colors = options.colors
+    chartOptions.legend!.show = options.legend
+    chartOptions.chart!.stacked = options.stacked
+
     //console.log(chartOptions, options)
     const chart = new ApexCharts(chartRef.current, chartOptions)
     if (chart) {

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "Total number of rerunning contestants",
+    "titles": [
+      "State",
+      "2017-Rerun_Count",
+      "2017: Total Contestants",
+      "2022-Rerun_Count",
+      "2022: Total Contestants",
+      "Link to historical"
+    ],
+    "data": [
+      [
+        "Goa",
+        "85",
+        "251",
+        "89",
+        "301",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Goa&var=Candidate&viz=rerunningCandidates\">Link for Goa</a>"
+      ],
+      [
+        "Manipur",
+        "136",
+        "266",
+        "120",
+        "265",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Manipur&var=Candidate&viz=rerunningCandidates\">Link for Manipur</a>"
+      ],
+      [
+        "Punjab",
+        "208",
+        "1145",
+        "218",
+        "1304",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Punjab&var=Candidate&viz=rerunningCandidates\">Link for Punjab</a>"
+      ],
+      [
+        "Uttar Pradesh",
+        "678",
+        "4853",
+        "515",
+        "4442",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttar_Pradesh&var=Candidate&viz=rerunningCandidates\">Link for Uttar_Pradesh</a>"
+      ],
+      [
+        "Uttarakhand",
+        "151",
+        "637",
+        "149",
+        "632",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttarakhand&var=Candidate&viz=rerunningCandidates\">Link for Uttarakhand</a>"
+      ]
+    ]
+  }
+]

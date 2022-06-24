@@ -1,0 +1,40 @@
+[
+  {
+    "title": "2022 & 2017: Total number of turncoats",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          9.56,
+          29.7,
+          2.36,
+          4.88,
+          5.97
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          14.29,
+          22.26,
+          2.3,
+          4.64,
+          5.38
+        ]
+      }
+    ]
+  }
+]

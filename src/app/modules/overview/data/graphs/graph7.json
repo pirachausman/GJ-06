@@ -1,0 +1,40 @@
+[
+  {
+    "title": "2022 & 2017: Average age of contestants",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          47.99,
+          51.55,
+          48.45,
+          44.91,
+          47.11
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          48.33,
+          52.41,
+          48.82,
+          45.83,
+          48.43
+        ]
+      }
+    ]
+  }
+]

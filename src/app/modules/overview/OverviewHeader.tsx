@@ -1,6 +1,6 @@
 import {FC} from 'react'
 import {ListsWidget10} from '../../../_metronic/partials/widgets/lists/ListsWidget10'
-import {data} from './data'
+import {data} from './data/data'
 
 type Props = {
   select: (id: number) => void

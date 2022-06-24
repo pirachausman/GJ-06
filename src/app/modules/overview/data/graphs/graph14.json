@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Constituency Type",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)",
+      "rgba(102, 147, 219, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "legend": true,
+    "series": [
+      {
+        "name": "General",
+        "data": [97.5, 66.67, 70.94, 78.91, 78.57]
+      },
+      {
+        "name": "Scheduled Caste",
+        "data":[2.5, 1.67, 29.06, 21.09, 18.57]
+      },
+      {
+        "name": "Scheduled Tribe",
+        "data":[0, 31.67, 0, 0, 2.86]
+      }
+    ]
+  }
+]

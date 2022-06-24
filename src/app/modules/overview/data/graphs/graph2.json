@@ -1,0 +1,40 @@
+[
+  {
+    "title": "2022 & 2017: Total number of women contestants",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          7.57,
+          4.14,
+          7.07,
+          9.93,
+          9.73
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          8.64,
+          6.42,
+          7.13,
+          12.63,
+          9.97
+        ]
+      }
+    ]
+  }
+]

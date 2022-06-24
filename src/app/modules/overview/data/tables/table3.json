@@ -1,0 +1,43 @@
+[
+  {
+    "id": "Total number of political parties",
+    "titles": [
+      "State",
+      "2017: Parties Contested",
+      "2022: Parties Contested",
+      "Link to historical data"
+    ],
+    "data": [
+      [
+        "Goa",
+        "18",
+        "13",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Goa&var=PartyStats&viz=partiesPresentedChart\">Link for Goa</a>"
+      ],
+      [
+        "Manipur",
+        "18",
+        "14",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Manipur&var=PartyStats&viz=partiesPresentedChart\">Link for Manipur</a>"
+      ],
+      [
+        "Punjab",
+        "52",
+        "58",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Punjab&var=PartyStats&viz=partiesPresentedChart\">Link for Punjab</a>"
+      ],
+      [
+        "Uttar_Pradesh",
+        "303",
+        "288",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttar_Pradesh&var=PartyStats&viz=partiesPresentedChart\">Link for Uttar_Pradesh</a>"
+      ],
+      [
+        "Uttarakhand",
+        "35",
+        "45",
+        "<a target=\"_blank\" href=\"https://lokdhaba.ashoka.edu.in/data-vis?et=AE&st=Uttarakhand&var=PartyStats&viz=partiesPresentedChart\">Link for Uttarakhand</a>"
+      ]
+    ]
+  }
+]

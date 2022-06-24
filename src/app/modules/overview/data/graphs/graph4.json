@@ -1,0 +1,40 @@
+[
+  {
+    "title": "2022 & 2017: Total number of rerunning incumbents",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          14.74,
+          21.43,
+          7.25,
+          5.03,
+          9.42
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          11.96,
+          21.89,
+          6.52,
+          4.5,
+          7.75
+        ]
+      }
+    ]
+  }
+]

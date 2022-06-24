@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Turncoats",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "Turncoat in State",
+        "data":[9.16, 26.32, 2.01, 4.12, 5.81]
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "title": "2022 & 2017: Total number of political parties",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          18,
+          18,
+          52,
+          303,
+          35
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          13,
+          14,
+          58,
+          288,
+          45
+        ]
+      }
+    ]
+  }
+]

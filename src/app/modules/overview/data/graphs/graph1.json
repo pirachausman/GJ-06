@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Total Contestants 2017 and 2022",
+    "series": [
+      {
+        "name": "2017",
+        "data": [
+          251,
+          266,
+          1145,
+          4853,
+          637
+        ]
+      },
+      {
+        "name": "2022",
+        "data": [
+          301,
+          265,
+          1304,
+          4442,
+          632
+        ]
+      }
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(100, 109, 204, 1)"
+    ]
+  },
+  {
+    "title": "Change in the number of candidates from the previous election",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": [
+        "Goa",
+        "Manipur",
+        "Punjab",
+        "Uttar Pradesh",
+        "Uttarakhand"
+      ]
+    },
+    "series": [
+      {
+        "name": "Change from 2017 to 2022",
+        "data": [
+          50,
+          -1,
+          159,
+          -411,
+          -5
+        ]
+      }
+    ]
+  }
+]

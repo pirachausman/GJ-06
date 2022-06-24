@@ -1,0 +1,137 @@
+[
+  {
+    "title": "Aam Aadmi Party (AAAP)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa", "Punjab"]
+    },
+    "series": [
+      {
+        "name": "AAAP",
+        "data": [0.0, 32.76]
+      }
+    ]
+  },
+  {
+    "title": "Bharatiya Janata Party (BJP)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "BJP",
+        "data": [25.0, 36.36, 1.72, 81.43, 85.0]
+      }
+    ]
+  },
+  {
+    "title": "Congress (INC)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "INC",
+        "data": [37.5, 36.36, 58.62, 1.69, 15.0]
+      }
+    ]
+  },
+  {
+    "title": "Maharashtrawadi Gomantak (MAG)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Goa"]
+    },
+    "series": [
+      {
+        "name": "MAG",
+        "data":  [12.5]
+      }
+    ]
+  },
+  {
+    "title": "Nagaland Peoples Party (NPEP)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Manipur"]
+    },
+    "series": [
+      {
+        "name": "NPEP",
+        "data": [18.18]
+      }
+    ]
+  },
+  {
+    "title": "Nagaland Peoples Front (NPF)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Manipur"]
+    },
+    "series": [
+      {
+        "name": "NPF",
+        "data": [9.09]
+      }
+    ]
+  },
+  {
+    "title": "Akali Dal (SAD)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Punjab"]
+    },
+    "series": [
+      {
+        "name": "SAD",
+        "data": [6.9]
+      }
+    ]
+  },
+  {
+    "title": "Bahujan Samaj Party (BSP)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"
+    ],
+    "xaxis": {
+      "categories": ["Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "BSP",
+        "data":  [3.8, 0.0]
+      }
+    ]
+  }
+  ,{
+    "title": "Samajwadi Party (SP)",
+    "colors": [
+      "rgba(125, 101, 216, 1)"      
+    ],
+    "xaxis": {
+      "categories": ["Uttar Pradesh"]
+    },
+    "series": [
+      {
+        "name": "SP",
+        "data": [7.59]
+      }
+    ]
+  }
+]

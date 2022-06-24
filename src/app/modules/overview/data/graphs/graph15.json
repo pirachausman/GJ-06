@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Contestants",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(102, 147, 219, 1)"
+    ],
+    "legend": true,
+    "stacked": true,
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "Female",
+        "data": [7.57, 4.14, 7.07, 9.93, 9.73]
+      },
+      {
+        "name": "Male",
+        "data": [92.43, 95.86, 92.84, 90.05, 89.95]
+      }
+    ]
+  },{
+    "title": "Winners",
+    "colors": [
+      "rgba(125, 101, 216, 1)",
+      "rgba(102, 147, 219, 1)"
+    ],
+    "legend": true,
+    "stacked": true,
+    "xaxis": {
+      "categories": ["Goa", "Manipur", "Punjab", "Uttar Pradesh", "Uttarakhand"]
+    },
+    "series": [
+      {
+        "name": "Female",
+        "data": [5.0, 3.33, 5.13, 10.42, 7.14]
+      },
+      {
+        "name": "Male",
+        "data": [95.0, 96.67, 94.87, 89.58, 92.86]
+      }
+    ]
+  }
+]
