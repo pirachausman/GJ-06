@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+Beaware of the scam at Gojek. They will get the work done and removed you from all the workspace without getting you paid
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
